@@ -1,0 +1,68 @@
+.side-bar {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 30rem;
+    height          : 100vh;
+    padding         : 2rem;
+    // overflow-y      : scroll;
+    background-color: var(--white);
+    border-right    : var(--border);
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+
+    #side-menu {
+        position        : fixed;
+        top             : 2rem;
+        left            : 2rem;
+        height          : 5rem;
+        width           : 5rem;
+        line-height     : 5rem;
+        background-color: var(--white);
+        border          : var(--border);
+        box-shadow      : var(--boxShadow);
+        text-align      : center;
+        cursor          : pointer;
+        display         : none;
+        @include fontStyle(2rem, var(--black));
+    }
+
+    .box {
+
+        padding      : 2rem 0;
+        border-bottom: var(--border);
+
+        .title {
+            @include fontStyle(2rem, var(--black));
+            text-transform: uppercase;
+            margin-bottom : 1rem;
+        }
+
+        #search-box {
+            width         : 100%;
+            border        : var(--border);
+            padding       : 1.2rem;
+            text-transform: none;
+            @include fontStyle(1.8rem, var(--black));
+
+        }
+
+        .btn {
+            display   : inline-block;
+            padding   : 1rem 3rem;
+            margin    : 1rem 0 0 1rem;
+            cursor    : pointer;
+            background: var(--lightBg);
+            @include fontStyle(1.8rem, var(--black));
+
+            &:hover,
+            &.active {
+                color     : var(--white);
+                background: var(--crimson);
+            }
+        }
+    }
+}

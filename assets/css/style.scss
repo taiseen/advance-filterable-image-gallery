@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 19 - Feb - 2022 */
+
+:root {
+    --crimson   : crimson;
+    --black     : #333;
+    --white     : #fff;
+    --lightBlack: #666;
+    --lightBg   : #eee;
+    --darkBg    : rgba(0, 0, 0, .7);
+    --border    : 1px solid #999;
+    --boxShadow : 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    outline        : none;
+    list-style     : none;
+    user-select    : none;
+    text-decoration: none;
+    text-transform : capitalize;
+    box-sizing     : border-box;
+    font-family    : 'Nunito', sans-serif;
+    transition     : all .1s linear;
+}
+
+@mixin fontStyle($size, $color) {
+    font-size: $size;
+    color    : $color;
+}
+
+
+/*
+    100% / 16px = 6.25%
+    6.25% == 1px 
+
+    6.25% * 10 = 62.5% 
+    62.5% == 10px
+*/
+html {
+    font-size         : 62.5%;
+    overflow-x        : hidden;
+    scroll-behavior   : smooth;
+    scroll-padding-top: 6rem;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--crimson);
+    }
+}
+
+
+.heading {
+    text-align    : center;
+    font-size     : 3.5rem;
+    color         : var(--black);
+    text-transform: uppercase;
+    margin-bottom : 2rem;
+}
+
+
+@import 'sideBar';
+@import 'gallery';
+@import 'responsiveness';

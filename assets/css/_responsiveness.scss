@@ -1,0 +1,48 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .side-bar {
+        left: -35rem;
+
+        &.userClick {
+            box-shadow: 0 0 0 100vw var(--darkBg);
+            left      : 0;
+        }
+
+        #side-menu {
+            display: inline-block;
+
+            &.fa-times {
+                top : 0;
+                left: 30rem;
+            }
+        }
+    }
+
+    .gallery {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .popup-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #side-menu.fa-times {
+        top       : 2rem !important;
+        left      : 2rem !important;
+        color     : var(--white);
+        background: tomato;
+    }
+
+    .side-bar.userClick {
+        padding-top: 8rem;
+    }
+}

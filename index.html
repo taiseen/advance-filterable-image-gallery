@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/img/fa.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <title>Advance Filterable Image Gallery</title>
+</head>
+
+<body>
+    <!-- 19 - Feb - 2022  -->
+
+    <div class="side-bar">
+
+        <div id="side-menu" class="fas fa-bars"></div>
+
+        <h1 class="heading">filter images</h1>
+
+        <div class="box">
+            <h3 class="title">search image :</h3>
+            <input type="text" placeholder="Search image..." id="search-box" />
+        </div>
+
+        <div class="box">
+            <h3 class="title">category :</h3>
+            <div class="category">
+                <div class="btn active" data-category="all">all</div>
+                <div class="btn" data-category="animal">animal</div>
+                <div class="btn" data-category="food">food</div>
+                <div class="btn" data-category="fish">fish</div>
+                <div class="btn" data-category="flower">flower</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="title">file type :</h3>
+            <div class="category">
+                <div class="btn active" data-category="all">all type</div>
+                <div class="btn" data-category="jpg">jpg</div>
+                <div class="btn" data-category="png">png</div>
+                <div class="btn" data-category="svg">svg</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="gallery">
+
+        <h1 class="heading">image gallery</h1>
+
+        <div class="image-container">
+            <img src="./assets/img/img-1.jpg" data-cat="animal" data-search="bird animal chick cute" alt="img">
+            <img src="./assets/img/img-2.svg" data-cat="food" data-search="food vector cookie" alt="img">
+            <img src="./assets/img/img-3.png" data-cat="food" data-search="food corn cartoon" alt="img">
+            <img src="./assets/img/img-4.jpg" data-cat="fish" data-search="fish animal dolphin" alt="img">
+            <img src="./assets/img/img-5.jpg" data-cat="animal" data-search="animal squirrel cute" alt="img">
+            <img src="./assets/img/img-6.png" data-cat="animal" data-search="animal panda png cartoon" alt="img">
+            <img src="./assets/img/img-7.svg" data-cat="animal" data-search="animal penguin bird cartoon" alt="img">
+            <img src="./assets/img/img-8.jpg" data-cat="animal" data-search="animal bird cute" alt="img">
+            <img src="./assets/img/img-9.png" data-cat="animal" data-search="animal cat mouse cute png" alt="img">
+            <img src="./assets/img/img-10.svg" data-cat="fish" data-search="animal fish shark vector" alt="img">
+            <img src="./assets/img/img-11.jpg" data-cat="food" data-search="food orange" alt="img">
+            <img src="./assets/img/img-12.svg" data-cat="food" data-search="food vector juice drink" alt="img">
+            <img src="./assets/img/img-13.png" data-cat="food" data-search="food chicken cartoon png" alt="img">
+            <img src="./assets/img/img-14.jpg" data-cat="food" data-search="food coffee bread breakfast" alt="img">
+            <img src="./assets/img/img-15.png" data-cat="food" data-search="food burger png cartoon" alt="img">
+            <img src="./assets/img/img-16.svg" data-cat="food" data-search="food popcorn vector" alt="img">
+            <img src="./assets/img/img-17.jpg" data-cat="food" data-search="food pancake breakfast" alt="img">
+            <img src="./assets/img/img-18.svg" data-cat="flower" data-search="flower plants vector" alt="img">
+            <img src="./assets/img/img-19.png" data-cat="flower" data-search="flower plants cartoon" alt="img">
+            <img src="./assets/img/img-20.jpg" data-cat="flower" data-search="flower plants nature" alt="img">
+        </div>
+
+    </div>
+
+
+    
+    <div class="popup-image">
+        <img src="./assets/img/img-1.jpg" alt="" />
+    </div>
+
+</body>
+
+</html>
